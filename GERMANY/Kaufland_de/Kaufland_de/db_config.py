@@ -2,7 +2,7 @@ import os
 import re
 
 
-month_date = '16102024'
+month_date = '09122024'
 db_host = '172.27.132.55'
 # db_host = 'localhost'
 db_user = 'root'
@@ -12,8 +12,8 @@ db_links_table = 'spirit_links'
 # db_data_table = f'SPIRIT_DATA_{month_date}'
 db_data_table = f'spirit_data_{month_date}'
 db_master_table = 'spirits_mapping_details'
-PAGESAVE = f'D:/PAGESAVE/KAUFLAND_DE/{month_date}'
-# PAGESAVE = f'C:/PAGESAVE/KAUFLAND_DE/{month_date}'
+# PAGESAVE = f'D:/PAGESAVE/KAUFLAND_DE/{month_date}'
+PAGESAVE = f'C:/PAGESAVE/KAUFLAND_DE/{month_date}'
 
 
 def pack_size(self, value):

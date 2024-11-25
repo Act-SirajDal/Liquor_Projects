@@ -32,9 +32,9 @@ class LinkExtractorSpider(scrapy.Spider):
         }
 
     def start_requests(self):
-        update_query = f'''UPDATE {db.db_links_table} set status="Pending"'''
-        self.cursor.execute(update_query)
-        self.con.commit()
+        # update_query = f'''UPDATE {db.db_links_table} set status="Pending"'''
+        # self.cursor.execute(update_query)
+        # self.con.commit()
         cat_dict = {
                         'Braende': 'https://www.edeka24.de/Wein-Spirituosen/Spirituosen/Braende/',
                         'Brandy-Weinbrand': 'https://www.edeka24.de/Wein-Spirituosen/Spirituosen/Brandy-Weinbrand/',

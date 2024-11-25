@@ -10,7 +10,7 @@ from scrapy.cmdline import execute
 import Kaufland_de.db_config as db
 from Kaufland_de.items import Kaufland_dataItem
 from scrapy.http import Request
-from Kaufland_de.EXPORT import file_generation
+# from Kaufland_de.EXPORT import file_generation
 
 cookies = {
     'AB-optimizely_user': '58762a4d-1390-4792-b233-9b4107f12dbf',
@@ -415,7 +415,7 @@ class DataSpider(scrapy.Spider):
     def closed(self, reason):
         """This method is called when the spider finishes."""
         print("Spider closed, reason:", reason)
-        file_generation()  # Call your file generation function here
+        # file_generation()  # Call your file generation function here
 
 
 if __name__ == '__main__':
